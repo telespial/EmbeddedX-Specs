@@ -1,0 +1,39 @@
+{
+  "platform": {
+    "name": "EmbeddedX",
+    "type": "UmbrellaSpecification",
+    "focus": "Structured AI-driven embedded system development",
+    "description": "Platform-level specification coordinating MRD, MDF, EIL, and AICS as interoperable repositories",
+    "status": "Draft"
+  },
+  "repositories": [
+    {
+      "name": "mrd",
+      "role": "Machine Readable Datasheet",
+      "description": "Machine-readable hardware definition for embedded devices, interfaces, constraints, and errata"
+    },
+    {
+      "name": "mdf",
+      "role": "Model Definition Format",
+      "description": "Structured embedded AI model definition including inputs, outputs, runtime assumptions, and metadata"
+    },
+    {
+      "name": "eil",
+      "role": "Embedded Intelligence Layer",
+      "description": "Runtime integration layer for safe, explainable embedded intelligence"
+    },
+    {
+      "name": "acs",
+      "role": "AI Coding Specification",
+      "description": "Structured AI coding, validation, and review framework for constrained code generation"
+    }
+  ],
+  "principles": [
+    "Declarative hardware",
+    "Constrained generation",
+    "Human visibility",
+    "Layered intelligence",
+    "Cross-layer traceability",
+    "Vendor-aware, vendor-neutral design"
+  ]
+}
