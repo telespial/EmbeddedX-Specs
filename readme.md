@@ -70,7 +70,7 @@ The recommended repository layout is:
 * `Machine-Readable-Datasheets-Specs` — MRD
 * `Model-Definition-Package-Specs` — MDP
 * `Embedded-Intelligence-Layer-Specs` — EIL
-* `AI-Coding-Specification` — AICS
+* `AI-Integrated-Coding-System-Spec` — AICS
 * `Embedded-Intelligence-Package-Specs` — EIP
 
 * * *
@@ -119,7 +119,7 @@ Recommended reading order:
 * [Machine-Readable-Datasheets-Specs](https://github.com/telespial/Machine-Readable-Datasheets-Specs)
 * [Model-Definition-Package-Specs](https://github.com/telespial/Model-Definition-Package-Specs)
 * [Embedded-Intelligence-Layer-Specs](https://github.com/telespial/Embedded-Intelligence-Layer-Specs)
-* [AI-Coding-Specification](https://github.com/telespial/AI-Coding-Specification)
+* [AI-Integrated-Coding-System-Spec](https://github.com/telespial/AI-Integrated-Coding-System-Spec)
 * [Embedded-Intelligence-Package-Specs](https://github.com/telespial/Embedded-Intelligence-Package-Specs)
 
 * * *

@@ -12,7 +12,7 @@ MDP — Model Definition Package.
 ## Embedded-Intelligence-Layer-Specs
 EIL — Embedded Intelligence Layer.
 
-## AI-Coding-Specification
+## AI-Integrated-Coding-System-Spec
 AICS — AI Integrated Coding System.
 
 ## Embedded-Intelligence-Package-Specs
