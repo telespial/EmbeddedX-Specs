@@ -1,12 +1,13 @@
 flowchart TD
-    A[EmbeddedX Framework / Platform] --> B[MRD]
-    A --> C[MDP]
+    A[EmbeddedX Framework / Platform] --> B[MDF]
+    A --> C[MRD]
     A --> D[EIL]
     A --> E[AICS]
-    A --> H[EIP]
-    B --> F[Generated or Modified Firmware]
-    C --> F
+    A --> F[EIP]
+
+    B --> D
+    C --> D
     D --> F
     E --> F
-    H --> F
-    F --> G[Physical Hardware]
+    F --> G[Generated or Modified Firmware]
+    G --> H[Physical Hardware]
