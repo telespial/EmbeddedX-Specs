@@ -24,6 +24,7 @@ EmbeddedX is not a single tool, runtime, or IDE. It is a platform-level framewor
 The platform currently centers on:
 
 * **MRD** — Machine Readable Datasheet
+* **MRC** — Machine Readable Connectivity
 * **MDP** — Model Definition Package
 * **EIL** — Embedded Intelligence Layer
 * **AICS** — AI Integrated Coding System
@@ -53,6 +54,7 @@ EmbeddedX is a framework-first platform.
 The umbrella repository establishes the platform rules first, then the sibling specifications operate under that framework:
 
 * **MRD** establishes hardware truth
+* **MRC** establishes board connectivity truth
 * **MDP** establishes model truth
 * **EIL** establishes runtime intelligence truth
 * **AICS** establishes AI-integrated coding and validation truth
@@ -117,6 +119,7 @@ Recommended reading order:
 ## 7. Related Repositories
 
 * [Machine-Readable-Datasheets-Specs](https://github.com/telespial/Machine-Readable-Datasheets-Specs)
+* [Machine-Readable-Connectivity-Specs](https://github.com/telespial/Machine-Readable-Connectivity-Specs)
 * [Model-Definition-Package-Specs](https://github.com/telespial/Model-Definition-Package-Specs)
 * [Embedded-Intelligence-Layer-Specs](https://github.com/telespial/Embedded-Intelligence-Layer-Specs)
 * [AI-Integrated-Coding-System-Spec](https://github.com/telespial/AI-Integrated-Coding-System-Spec)
