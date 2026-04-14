@@ -23,12 +23,12 @@ EmbeddedX is not a single tool, runtime, or IDE. It is a platform framework inte
 
 The platform currently centers on:
 
-* **Machine Readable Datasheet (MRD)** — hardware capability definition
-* **Machine Readable Connectivity (MRC)** — real board connectivity definition
-* **Model Definition Package (MDP)** — model interface and behavior definition
-* **Embedded Intelligence Layer (EIL)** — safe runtime intelligence layer
-* **AI Integrated Coding System (AICS)** — controlled integration and code generation system
-* **Embedded Intelligence Package (EIP)** — deployment and package structure
+* **Machine Readable Datasheet (MRD)** - hardware capability definition
+* **Machine Readable Connectivity (MRC)** - real board connectivity definition
+* **Model Definition Package (MDP)** - model interface and behavior definition
+* **Embedded Intelligence Layer (EIL)** - safe runtime intelligence layer
+* **AI Integrated Coding System (AICS)** - controlled integration and code generation system
+* **Embedded Intelligence Package (EIP)** - deployment and package structure
 
 * * *
 
