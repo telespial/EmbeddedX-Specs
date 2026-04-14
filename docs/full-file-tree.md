@@ -5,42 +5,9 @@
   /library
     /vendors
       /infineon
-        vendor.manifest.json
-        /sdk
-        /debug
-        /hal
-        /examples
-        /boards
-        /components
-        /docs
       /microchip
-        vendor.manifest.json
-        /sdk
-        /debug
-        /hal
-        /examples
-        /boards
-        /components
-        /docs
       /nxp
-        vendor.manifest.json
-        /sdk
-        /debug
-        /hal
-        /examples
-        /boards
-        /components
-        /docs
       /stmicro
-        vendor.manifest.json
-        /sdk
-        /debug
-        /hal
-        /examples
-        /boards
-        /components
-        /docs
-
     /components
       /mcu
       /mpu
@@ -56,23 +23,19 @@
       /protection
       /timing
       /other
-
     /specs
       /mrd
       /mrc
       /mdp
       /eil
       /eip
-
     /sdk
     /debug
-
   /projects
     /<project_name>
       start_here.md
       project.manifest.json
       project.rules.md
-
       /refs
       /inputs
       /models
@@ -80,7 +43,6 @@
       /generated
       /validation
       /logs
-
       /states
         /working
         /candidate

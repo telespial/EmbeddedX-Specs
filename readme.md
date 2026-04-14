@@ -23,12 +23,12 @@ EmbeddedX is not a single tool, runtime, or IDE. It is a platform framework inte
 
 The platform currently centers on:
 
-* **Machine Readable Datasheet (MRD)** - hardware capability definition
-* **Machine Readable Connectivity (MRC)** - real board connectivity definition
-* **Model Definition Package (MDP)** - model interface and behavior definition
-* **Embedded Intelligence Layer (EIL)** - safe runtime intelligence layer
-* **AI Integrated Coding System (AICS)** - controlled integration and code generation system
-* **Embedded Intelligence Package (EIP)** - deployment and package structure
+* **Machine Readable Datasheet (MRD)** — hardware capability definition
+* **Machine Readable Connectivity (MRC)** — real board connectivity definition
+* **Model Definition Package (MDP)** — model interface and behavior definition
+* **Embedded Intelligence Layer (EIL)** — safe runtime intelligence layer
+* **AI Integrated Coding System (AICS)** — controlled integration and code generation system
+* **Embedded Intelligence Package (EIP)** — deployment and package structure
 
 * * *
 
@@ -67,7 +67,7 @@ These layers work together to constrain generated firmware before it reaches phy
 
 ## 4. Project Framework
 
-EmbeddedX now also establishes how a user creates and manages a project.
+EmbeddedX also establishes how a user creates and manages a project.
 
 The project framework defines:
 
@@ -78,7 +78,7 @@ The project framework defines:
 * rules and control boundaries
 * state management and restore points
 * vendor and development kit organization
-* Standardized Developer Package input rules
+* Standardized Developer Package (SDP) input rules
 
 * * *
 

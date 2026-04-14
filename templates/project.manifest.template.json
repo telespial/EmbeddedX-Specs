@@ -1,22 +1,3 @@
 {
-  "project_name": "<name>",
-  "vendor": "<vendor>",
-  "board": "<board>",
-  "processor_type": "<mcu_or_mpu>",
-  "library_refs": {},
-  "enabled_specs": [
-    "MRD",
-    "MRC",
-    "MDP",
-    "EIL",
-    "AICS",
-    "EIP"
-  ],
-  "states": [
-    "working",
-    "candidate",
-    "golden",
-    "failsafe",
-    "recovery"
-  ]
+  "project_name": "<name>"
 }
