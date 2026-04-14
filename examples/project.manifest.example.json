@@ -1,0 +1,27 @@
+{
+  "project_name": "smart_sensor_node",
+  "vendor": "stmicro",
+  "board": "NUCLEO-H7S78",
+  "processor_type": "mcu",
+  "library_refs": {
+    "vendor_hub": "library/vendors/stmicro",
+    "board": "library/vendors/stmicro/boards/NUCLEO-H7S78",
+    "mrd": "library/specs/mrd/STM32H7S78.mrd.json",
+    "mrc": "library/specs/mrc/NUCLEO-H7S78.mrc.json"
+  },
+  "enabled_specs": [
+    "MRD",
+    "MRC",
+    "MDP",
+    "EIL",
+    "AICS",
+    "EIP"
+  ],
+  "states": [
+    "working",
+    "candidate",
+    "golden",
+    "failsafe",
+    "recovery"
+  ]
+}

@@ -1,6 +1,6 @@
 # EmbeddedX
 
-## A Platform Specification for Structured AI-Driven Embedded System Development
+## A System for Building Embedded Products with Integrated Intelligence
 
 Proposed by: Richard Haberkern  
 Contact: rmhaberkern@gmail.com
@@ -11,11 +11,11 @@ Free for evaluation. Commercial use requires permission. See license.md for more
 
 ## Abstract
 
-Embedded development still depends too heavily on fragmented human interpretation. Hardware behavior is often buried in long datasheets, model behavior is described inconsistently across projects, runtime intelligence is integrated in ad hoc ways, and AI-generated code is not always constrained enough for engineers to trust, review, and maintain.
+Embedded development still depends too heavily on fragmented human interpretation. Hardware behavior is buried in datasheets, board wiring is scattered across schematics and netlists, model behavior is described inconsistently, and AI-assisted code generation is often too unconstrained for engineers to trust, review, and maintain.
 
-EmbeddedX is a platform that defines a structured system for AI-driven embedded development across hardware, models, runtime, coding, and deployable packages.
+EmbeddedX is a platform specification for building embedded products with integrated intelligence. It defines a structured system across hardware, connectivity, models, runtime intelligence, controlled code generation, deployable packages, and project creation workflows.
 
-EmbeddedX is not a single tool, runtime, or IDE. It is a platform-level framework intended to support a family of independent repositories and future implementations.
+EmbeddedX is not a single tool, runtime, or IDE. It is a platform framework intended to support a family of independent specifications, reusable libraries, controlled project workspaces, and future implementations.
 
 * * *
 
@@ -23,27 +23,28 @@ EmbeddedX is not a single tool, runtime, or IDE. It is a platform-level framewor
 
 The platform currently centers on:
 
-* **MRD** — Machine Readable Datasheet
-* **MRC** — Machine Readable Connectivity
-* **MDP** — Model Definition Package
-* **EIL** — Embedded Intelligence Layer
-* **AICS** — AI Integrated Coding System
-* **EIP** — Embedded Intelligence Package
+* **Machine Readable Datasheet (MRD)** — hardware capability definition
+* **Machine Readable Connectivity (MRC)** — real board connectivity definition
+* **Model Definition Package (MDP)** — model interface and behavior definition
+* **Embedded Intelligence Layer (EIL)** — safe runtime intelligence layer
+* **AI Integrated Coding System (AICS)** — controlled integration and code generation system
+* **Embedded Intelligence Package (EIP)** — deployment and package structure
 
 * * *
 
 ## 2. Platform Objective
 
-EmbeddedX aims to create a structured path toward embedded system automation without turning the engineering process into a black box.
+EmbeddedX aims to reduce risk and development cost while accelerating time to market for embedded products.
 
 The platform is intended to support systems that can:
 
 * describe hardware in machine-readable form
+* describe real board connectivity in machine-readable form
 * describe embedded AI models in a portable and structured form
 * integrate runtime intelligence through clear boundaries
-* package deployable embedded intelligence consistently
-* generate and modify code using constrained AI workflows
-* preserve human visibility, editability, validation, and rollback
+* generate and modify code using constrained workflows
+* preserve human visibility, editability, validation, rollback, and recovery
+* standardize reusable developer inputs across vendors, boards, and components
 
 * * *
 
@@ -53,66 +54,69 @@ EmbeddedX is a framework-first platform.
 
 The umbrella repository establishes the platform rules first, then the sibling specifications operate under that framework:
 
-* **MRD** establishes hardware truth
-* **MRC** establishes board connectivity truth
-* **MDP** establishes model truth
-* **EIL** establishes runtime intelligence truth
-* **AICS** establishes AI-integrated coding and validation truth
-* **EIP** establishes deployable package structure
+* **Machine Readable Datasheet (MRD)** establishes hardware truth
+* **Machine Readable Connectivity (MRC)** establishes board connectivity truth
+* **Model Definition Package (MDP)** establishes model truth
+* **Embedded Intelligence Layer (EIL)** establishes runtime intelligence truth
+* **AI Integrated Coding System (AICS)** establishes coding, validation, and recovery truth
+* **Embedded Intelligence Package (EIP)** establishes deployable package structure
 
 These layers work together to constrain generated firmware before it reaches physical hardware.
 
 * * *
 
-## 4. Repository Structure
+## 4. Project Framework
 
-The recommended repository layout is:
+EmbeddedX now also establishes how a user creates and manages a project.
 
-* `EmbeddedX-Specs` — umbrella platform specification
-* `Machine-Readable-Datasheets-Specs` — MRD
-* `Model-Definition-Package-Specs` — MDP
-* `Embedded-Intelligence-Layer-Specs` — EIL
-* `AI-Integrated-Coding-System-Spec` — AICS
-* `Embedded-Intelligence-Package-Specs` — EIP
+The project framework defines:
 
-* * *
-
-## 5. Design Principles
-
-### Declarative Hardware
-
-Important hardware meaning should not remain trapped in prose-only documentation when a structured form is possible.
-
-### Constrained Generation
-
-AI-assisted code generation should be bounded by file scope, interfaces, specifications, validation, visibility, and recovery.
-
-### Human Visibility
-
-Generated code, diffs, validation reports, and package contents should remain visible to the engineer. If you can’t see it, you can’t trust it.
-
-### Layered Intelligence
-
-Runtime intelligence should be integrated as an explicit layer rather than as uncontrolled replacement logic.
-
-### Cross-Layer Traceability
-
-Artifacts should be traceable to hardware definitions, model definitions, runtime assumptions, package contents, and generation intent.
+* shared library structure
+* project workspace structure
+* required project files
+* agent roles
+* rules and control boundaries
+* state management and restore points
+* vendor and development kit organization
+* Standardized Developer Package input rules
 
 * * *
 
-## 6. Reading Order
+## 5. Simplified File Tree
 
-Recommended reading order:
+```text
+/embeddedx
+  /library
+    /vendors
+    /components
+    /specs
+  /projects
+    /<project_name>
+      start_here.md
+      project.manifest.json
+      project.rules.md
+      /generated
+      /validation
+      /logs
+      /states
+```
 
-1. `readme.md`
-2. `docs/platform-overview.md`
-3. `docs/architecture.md`
-4. `docs/repositories.md`
-5. `docs/interoperability.md`
-6. `docs/design-principles.md`
-7. `docs/governance.md`
-8. `docs/roadmap.md`
+Full project and library tree: [docs/full-file-tree.md](docs/full-file-tree.md)
+
+* * *
+
+## 6. Key Framework Documents
+
+* [docs/project-framework.md](docs/project-framework.md)
+* [docs/system-architecture.md](docs/system-architecture.md)
+* [docs/agent-architecture.md](docs/agent-architecture.md)
+* [docs/rules-and-control.md](docs/rules-and-control.md)
+* [docs/state-management.md](docs/state-management.md)
+* [docs/library-structure.md](docs/library-structure.md)
+* [docs/vendor-hubs.md](docs/vendor-hubs.md)
+* [docs/dev-kit-structure.md](docs/dev-kit-structure.md)
+* [docs/sdp-spec.md](docs/sdp-spec.md)
+* [docs/full-file-tree.md](docs/full-file-tree.md)
 
 * * *
 

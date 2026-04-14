@@ -1,7 +1,22 @@
 # EmbeddedX Roadmap
 
-1. Platform foundation
-2. Specification alignment
-3. Cross-specification examples
-4. Tooling and conformance
-5. Public review and iteration
+## Phase 1 — Platform Foundation
+
+* establish umbrella repository structure
+* define architecture and repository relationships
+* define project framework
+* define shared library vs project workspace split
+
+## Phase 2 — Structured Inputs
+
+* define Standardized Developer Package rules
+* define vendor hubs
+* define development kit structure
+* support Machine Readable Datasheet and Machine Readable Connectivity adoption
+
+## Phase 3 — Controlled Execution
+
+* define agent architecture
+* define state management
+* define rules and control
+* define recovery and validation flows

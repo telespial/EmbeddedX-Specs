@@ -1,19 +1,9 @@
 # EmbeddedX Repositories
 
-## EmbeddedX-Specs
-The umbrella platform repository.
-
-## Machine-Readable-Datasheets-Specs
-MRD — Machine Readable Datasheet.
-
-## Model-Definition-Package-Specs
-MDP — Model Definition Package.
-
-## Embedded-Intelligence-Layer-Specs
-EIL — Embedded Intelligence Layer.
-
-## AI-Integrated-Coding-System-Spec
-AICS — AI Integrated Coding System.
-
-## Embedded-Intelligence-Package-Specs
-EIP — Embedded Intelligence Package.
+* EmbeddedX-Specs — umbrella platform specification
+* Machine-Readable-Datasheets-Specs — Machine Readable Datasheet (MRD)
+* Machine-Readable-Connectivity-Specs — Machine Readable Connectivity (MRC)
+* Model-Definition-Package-Specs — Model Definition Package (MDP)
+* Embedded-Intelligence-Layer-Specs — Embedded Intelligence Layer (EIL)
+* AI-Integrated-Coding-System-Spec — AI Integrated Coding System (AICS)
+* Embedded-Intelligence-Package-Specs — Embedded Intelligence Package (EIP)

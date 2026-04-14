@@ -1,11 +1,23 @@
 {
   "platform": "EmbeddedX",
-  "repos": [
+  "status": "Draft",
+  "core_specs": [
     "MRD",
+    "MRC",
     "MDP",
     "EIL",
     "AICS",
     "EIP"
   ],
-  "status": "Draft"
+  "framework_docs": [
+    "project-framework",
+    "system-architecture",
+    "agent-architecture",
+    "rules-and-control",
+    "state-management",
+    "library-structure",
+    "vendor-hubs",
+    "dev-kit-structure",
+    "sdp-spec"
+  ]
 }

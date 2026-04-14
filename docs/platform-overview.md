@@ -7,8 +7,9 @@ It establishes:
 * the platform view
 * the relationship between repositories
 * terminology alignment
-* system-level architectural boundaries
+* architectural boundaries
 * interoperability expectations
-* documentation patterns for sibling repositories
+* project creation framework
+* documentation and template patterns
 
-Without an umbrella repository, related specification documents can drift in terminology, overlap in scope, or leave important cross-layer expectations undefined.
+Without an umbrella repository, related specifications drift in terminology, overlap in scope, or leave important cross-layer expectations undefined.
