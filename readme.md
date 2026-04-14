@@ -13,7 +13,7 @@ Free for evaluation. Commercial use requires permission. See license.md for more
 
 Embedded development still depends too heavily on fragmented human interpretation. Hardware behavior is buried in datasheets, board wiring is scattered across schematics and netlists, model behavior is described inconsistently, and AI-assisted code generation is often too unconstrained for engineers to trust, review, and maintain.
 
-EmbeddedX is a platform specification for building embedded products with integrated intelligence. It defines a structured system across hardware, connectivity, models, runtime intelligence, controlled code generation, deployable packages, and project creation workflows.
+EmbeddedX is a platform that defines a structured system for AI-driven embedded development across hardware, connectivity, models, runtime, coding, and deployable packages.
 
 EmbeddedX is not a single tool, runtime, or IDE. It is a platform framework intended to support a family of independent specifications, reusable libraries, controlled project workspaces, and future implementations.
 
