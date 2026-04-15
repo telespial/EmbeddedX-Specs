@@ -23,12 +23,12 @@ EmbeddedX is not a single tool, runtime, or IDE. It is a platform framework inte
 
 The platform currently centers on:
 
-* **Machine Readable Datasheet (MRD)** - hardware capability definition
-* **Machine Readable Connectivity (MRC)** - real board connectivity definition
-* **Model Definition Package (MDP)** - model interface and behavior definition
-* **Embedded Intelligence Layer (EIL)** - safe runtime intelligence layer
-* **AI Integrated Coding System (AICS)** - controlled integration and code generation system
-* **Embedded Intelligence Package (EIP)** - deployment and package structure
+* **Machine Readable Datasheet (MRD)**: describes what hardware can do
+* **Machine Readable Connectivity (MRC)**: shows how the board is wired using schematics, netlists, BOM files, and board files
+* **Model Definition Package (MDP)**: defines model inputs, outputs, and behavior
+* **Embedded Intelligence Layer (EIL)**: adds safe runtime intelligence alongside firmware
+* **AI Integrated Coding System (AICS)**: controls integration, validation, and code generation
+* **Embedded Intelligence Package (EIP)**: packages the deployable output
 
 * * *
 
@@ -39,7 +39,7 @@ EmbeddedX aims to reduce risk and development cost while accelerating time to ma
 The platform is intended to support systems that can:
 
 * describe hardware in machine-readable form
-* describe real board connectivity in machine-readable form
+* show how a board is connected using schematics, netlists, BOM files, and board files
 * describe embedded AI models in a portable and structured form
 * integrate runtime intelligence through clear boundaries
 * generate and modify code using constrained workflows
@@ -52,20 +52,38 @@ The platform is intended to support systems that can:
 
 EmbeddedX is a framework-first platform.
 
-The umbrella repository establishes the platform rules first, then the sibling specifications operate under that framework:
+The umbrella repository defines the platform rules first, then the sibling specifications operate under that framework:
 
-* **Machine Readable Datasheet (MRD)** establishes hardware truth
-* **Machine Readable Connectivity (MRC)** establishes board connectivity truth
-* **Model Definition Package (MDP)** establishes model truth
-* **Embedded Intelligence Layer (EIL)** establishes runtime intelligence truth
-* **AI Integrated Coding System (AICS)** establishes coding, validation, and recovery truth
-* **Embedded Intelligence Package (EIP)** establishes deployable package structure
+* **Machine Readable Datasheet (MRD)** describes hardware capability
+* **Machine Readable Connectivity (MRC)** shows how the schematic, nets, components, and board connections fit together
+* **Model Definition Package (MDP)** defines model inputs, outputs, and behavior
+* **Embedded Intelligence Layer (EIL)** defines where intelligence can run without changing the firmware control path
+* **AI Integrated Coding System (AICS)** controls code generation, validation, and recovery
+* **Embedded Intelligence Package (EIP)** defines how deployable outputs are packaged
 
-These layers work together to constrain generated firmware before it reaches physical hardware.
+These layers work together to reduce ambiguity before generated firmware reaches physical hardware.
 
 * * *
 
-## 4. Project Framework
+## 4. First Project Walkthrough
+
+A first EmbeddedX project should be easy to follow:
+
+1. Choose a vendor and development kit
+2. Load the Standardized Developer Package (SDP), if available
+3. Link the schematic, netlist, BOM, datasheets, sample code, and board files
+4. Link or generate Machine Readable Datasheet (MRD) files
+5. Link or generate Machine Readable Connectivity (MRC) files
+6. Create `start_here.md`, `project.manifest.json`, and `project.rules.md`
+7. Run validation checks before generating code
+8. Generate only into approved project folders
+9. Promote a validated result to candidate or golden state
+
+This makes the process visible, repeatable, and recoverable.
+
+* * *
+
+## 5. Project Framework
 
 EmbeddedX also establishes how a user creates and manages a project.
 
@@ -82,7 +100,7 @@ The project framework defines:
 
 * * *
 
-## 5. Simplified File Tree
+## 6. Simplified File Tree
 
 ```text
 /embeddedx
@@ -105,7 +123,7 @@ Full project and library tree: [docs/full-file-tree.md](docs/full-file-tree.md)
 
 * * *
 
-## 6. Key Framework Documents
+## 7. Key Framework Documents
 
 * [docs/project-framework.md](docs/project-framework.md)
 * [docs/system-architecture.md](docs/system-architecture.md)
@@ -117,10 +135,11 @@ Full project and library tree: [docs/full-file-tree.md](docs/full-file-tree.md)
 * [docs/dev-kit-structure.md](docs/dev-kit-structure.md)
 * [docs/sdp-spec.md](docs/sdp-spec.md)
 * [docs/full-file-tree.md](docs/full-file-tree.md)
+* [docs/market-position.md](docs/market-position.md)
 
 * * *
 
-## 7. Related Repositories
+## 8. Related Repositories
 
 * [Machine-Readable-Datasheets-Specs](https://github.com/telespial/Machine-Readable-Datasheets-Specs)
 * [Machine-Readable-Connectivity-Specs](https://github.com/telespial/Machine-Readable-Connectivity-Specs)
