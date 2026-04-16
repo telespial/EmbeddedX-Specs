@@ -28,7 +28,16 @@ memory/
 
 ## Required behavior
 
-At the end of each work session, update:
+Do not update memory after every prompt or message.
+
+Update project memory at checkpoints:
+
+- after meaningful decisions or structural changes
+- after any commit
+- before switching focus
+- before stopping work
+
+At each checkpoint, update:
 
 - `memory/current-state.md`
 - `memory/session-handoff.md`
