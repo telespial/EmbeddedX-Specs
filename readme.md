@@ -77,6 +77,7 @@ The project framework includes:
 * shared library structure
 * project workspace structure
 * required project files
+* required portable project memory
 * agent roles
 * rules and control boundaries
 * state management and restore points
@@ -102,6 +103,7 @@ The project framework includes:
       /validation
       /logs
       /states
+      /memory
 ```
 
 Full project and library tree: [docs/full-file-tree.md](docs/full-file-tree.md)
@@ -111,6 +113,7 @@ Full project and library tree: [docs/full-file-tree.md](docs/full-file-tree.md)
 ## 6. Key Framework Documents
 
 * [docs/project-framework.md](docs/project-framework.md)
+* [docs/portable-project-memory.md](docs/portable-project-memory.md)
 * [docs/system-architecture.md](docs/system-architecture.md)
 * [docs/agent-architecture.md](docs/agent-architecture.md)
 * [docs/rules-and-control.md](docs/rules-and-control.md)
