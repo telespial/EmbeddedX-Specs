@@ -1,5 +1,7 @@
 # EmbeddedX
 
+🧭 **You are here (canonical index).**
+
 ## Specifications for Structured Embedded Development
 
 **Canonical entry point:** this `EmbeddedX-Specs` repository is the umbrella index for the full EmbeddedX specification family.
