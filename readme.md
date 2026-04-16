@@ -54,12 +54,12 @@ EmbeddedX is a framework-first platform.
 
 The umbrella repository establishes the platform rules first, then the sibling specifications operate under that framework:
 
-* **Machine Readable Datasheet (MRD)** establishes hardware truth
-* **Machine Readable Connectivity (MRC)** establishes board connectivity truth
-* **Model Definition Package (MDP)** establishes model truth
-* **Embedded Intelligence Layer (EIL)** establishes runtime intelligence truth
-* **AI Integrated Coding System (AICS)** establishes coding, validation, and recovery truth
-* **Embedded Intelligence Package (EIP)** establishes deployable package structure
+- Machine Readable Datasheet (MRD) defines hardware capabilities and constraints
+- Machine Readable Connectivity (MRC) defines board connectivity facts
+- Model Definition Package (MDP) defines model interfaces and behavior
+- Embedded Intelligence Layer (EIL) defines runtime boundaries
+- AI Integrated Coding System (AICS) defines coding, validation, and recovery controls
+- Embedded Intelligence Package (EIP) defines deployable package structure
 
 These layers work together to constrain generated firmware before it reaches physical hardware.
 
