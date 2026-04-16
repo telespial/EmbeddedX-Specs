@@ -1,6 +1,6 @@
 # EmbeddedX
 
-## Specifications for the EmbeddedX Workflow
+## Specifications for Structured Embedded Development
 
 Proposed by: Richard Haberkern  
 Contact: rmhaberkern@gmail.com
@@ -11,11 +11,13 @@ Free for evaluation. Commercial use requires permission. See license.md for more
 
 ## Abstract
 
-AI-assisted embedded development still depends too heavily on manual interpretation. Hardware behavior is buried in datasheets, board wiring is split across schematics and netlists, model behavior is described inconsistently, and code generation is often too unconstrained for engineers to trust or maintain.
+Embedded development still depends on information scattered across datasheets, schematics, netlists, board files, SDK examples, application notes, and local project rules.
 
-EmbeddedX defines a set of related specifications for hardware data, board connectivity, model metadata, runtime integration, code-generation controls, and deployable packages.
+That works for experienced engineers, but it creates problems for repeatable development and controlled code generation. Tools need to know which files are inputs, which files are generated outputs, what can be modified, and what must remain unchanged.
 
-It is not a single tool, runtime, or IDE. It is a family of specifications and workspace conventions that other tools and repositories can build on.
+EmbeddedX defines a set of related specifications for hardware data, board connectivity, reusable development kit inputs, model metadata, runtime integration, code generation controls, and deployable packages.
+
+EmbeddedX is not a replacement for existing development environments, vendor documentation, SDKs, or engineering review. It is a family of specifications and workspace conventions that other tools and repositories can build on.
 
 * * *
 
@@ -23,10 +25,11 @@ It is not a single tool, runtime, or IDE. It is a family of specifications and w
 
 The platform currently centers on:
 
-* **Machine Readable Datasheet (MRD)** - hardware capability definition
-* **Machine Readable Connectivity (MRC)** - real board connectivity definition
+* **Machine Readable Datasheet (MRD)** - hardware capability and constraint definition
+* **Machine Readable Connectivity (MRC)** - board connectivity definition
+* **Standardized Developer Package (SDP)** - reusable vendor and board input package
 * **Model Definition Package (MDP)** - model interface and behavior definition
-* **Embedded Intelligence Layer (EIL)** - safe runtime intelligence layer
+* **Embedded Intelligence Layer (EIL)** - bounded runtime intelligence layer
 * **AI Integrated Coding System (AICS)** - controlled integration and code generation system
 * **Embedded Intelligence Package (EIP)** - deployment and package structure
 
@@ -40,7 +43,8 @@ The specification family is intended to support systems that can:
 
 * describe hardware in machine-readable form
 * describe real board connectivity in machine-readable form
-* describe embedded AI models in a portable and structured form
+* organize reusable vendor and board inputs
+* describe embedded models in a portable and structured form
 * integrate runtime intelligence through clear boundaries
 * generate and modify code using constrained workflows
 * preserve human visibility, editability, validation, rollback, and recovery
@@ -52,14 +56,15 @@ The specification family is intended to support systems that can:
 
 This umbrella repository defines the shared structure. The sibling specification repos fill in the technical details:
 
-- Machine Readable Datasheet (MRD) defines hardware capabilities and constraints
-- Machine Readable Connectivity (MRC) defines board connectivity facts
-- Model Definition Package (MDP) defines model interfaces and behavior
-- Embedded Intelligence Layer (EIL) defines runtime boundaries
-- AI Integrated Coding System (AICS) defines coding, validation, and recovery controls
-- Embedded Intelligence Package (EIP) defines deployable package structure
+* **Machine Readable Datasheet (MRD)** defines hardware capabilities and constraints
+* **Machine Readable Connectivity (MRC)** defines board connectivity facts
+* **Standardized Developer Package (SDP)** organizes reusable vendor and board inputs
+* **Model Definition Package (MDP)** defines model interfaces and behavior
+* **Embedded Intelligence Layer (EIL)** defines runtime boundaries
+* **AI Integrated Coding System (AICS)** defines coding, validation, and recovery controls
+* **Embedded Intelligence Package (EIP)** defines deployable package structure
 
-Together, these specs give generation and validation tools a more concrete input surface before they touch firmware.
+Together, these specs give generation and validation tools a concrete input surface before they touch firmware.
 
 * * *
 
@@ -122,9 +127,10 @@ Full project and library tree: [docs/full-file-tree.md](docs/full-file-tree.md)
 
 * [Machine-Readable-Datasheets-Specs](https://github.com/telespial/Machine-Readable-Datasheets-Specs)
 * [Machine-Readable-Connectivity-Specs](https://github.com/telespial/Machine-Readable-Connectivity-Specs)
+* [Standardized-Developer-Package-Specs](https://github.com/telespial/Standardized-Developer-Package-Specs)
 * [Model-Definition-Package-Specs](https://github.com/telespial/Model-Definition-Package-Specs)
 * [Embedded-Intelligence-Layer-Specs](https://github.com/telespial/Embedded-Intelligence-Layer-Specs)
-* [AI-Integrated-Coding-System-Spec](https://github.com/telespial/AI-Integrated-Coding-System-Spec)
+* [AI-Coding-System-Specs](https://github.com/telespial/AI-Coding-System-Specs)
 * [Embedded-Intelligence-Package-Specs](https://github.com/telespial/Embedded-Intelligence-Package-Specs)
 
 * * *
