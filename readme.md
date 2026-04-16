@@ -1,6 +1,6 @@
 # EmbeddedX
 
-## A System for Building Embedded Products with Integrated Intelligence
+## Specifications for the EmbeddedX Workflow
 
 Proposed by: Richard Haberkern  
 Contact: rmhaberkern@gmail.com
@@ -11,11 +11,11 @@ Free for evaluation. Commercial use requires permission. See license.md for more
 
 ## Abstract
 
-AI assisted embedded hardware development still depends too heavily on fragmented human interpretation. Hardware behavior is buried in datasheets, board wiring is scattered across schematics and netlists, model behavior is described inconsistently, and AI-assisted code generation is often too unconstrained for engineers to trust, review, and maintain.
+AI-assisted embedded development still depends too heavily on manual interpretation. Hardware behavior is buried in datasheets, board wiring is split across schematics and netlists, model behavior is described inconsistently, and code generation is often too unconstrained for engineers to trust or maintain.
 
-EmbeddedX is a platform that defines a structured system for AI-driven embedded development across hardware, connectivity, models, runtime, coding, and deployable packages.
+EmbeddedX defines a set of related specifications for hardware data, board connectivity, model metadata, runtime integration, code-generation controls, and deployable packages.
 
-EmbeddedX is not a single tool, runtime, or IDE. It is a platform framework intended to support a family of independent specifications, reusable libraries, controlled project workspaces, and future implementations.
+It is not a single tool, runtime, or IDE. It is a family of specifications and workspace conventions that other tools and repositories can build on.
 
 * * *
 
@@ -32,11 +32,11 @@ The platform currently centers on:
 
 * * *
 
-## 2. Platform Objective
+## 2. Objective
 
-EmbeddedX aims to reduce risk and development cost while accelerating time to market for embedded products.
+EmbeddedX aims to reduce setup churn, integration mistakes, and undocumented assumptions in embedded projects.
 
-The platform is intended to support systems that can:
+The specification family is intended to support systems that can:
 
 * describe hardware in machine-readable form
 * describe real board connectivity in machine-readable form
@@ -48,11 +48,9 @@ The platform is intended to support systems that can:
 
 * * *
 
-## 3. Framework-First Architecture
+## 3. Repository Structure
 
-EmbeddedX is a framework-first platform.
-
-The umbrella repository establishes the platform rules first, then the sibling specifications operate under that framework:
+This umbrella repository defines the shared structure. The sibling specification repos fill in the technical details:
 
 - Machine Readable Datasheet (MRD) defines hardware capabilities and constraints
 - Machine Readable Connectivity (MRC) defines board connectivity facts
@@ -61,15 +59,15 @@ The umbrella repository establishes the platform rules first, then the sibling s
 - AI Integrated Coding System (AICS) defines coding, validation, and recovery controls
 - Embedded Intelligence Package (EIP) defines deployable package structure
 
-These layers work together to constrain generated firmware before it reaches physical hardware.
+Together, these specs give generation and validation tools a more concrete input surface before they touch firmware.
 
 * * *
 
 ## 4. Project Framework
 
-EmbeddedX also establishes how a user creates and manages a project.
+EmbeddedX also defines how a user creates and manages a project.
 
-The project framework defines:
+The project framework includes:
 
 * shared library structure
 * project workspace structure
