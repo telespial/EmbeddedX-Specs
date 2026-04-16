@@ -29,6 +29,7 @@
       /mdp
       /eil
       /eip
+      /sdp
     /sdk
     /debug
   /projects
@@ -49,4 +50,13 @@
         /golden
         /failsafe
         /recovery
+      /memory
+        current-state.md
+        session-handoff.md
+        decisions.md
+        change-log.md
+        next-steps.md
+        project-state.json
+        /sessions
+        /snapshots
 ```
