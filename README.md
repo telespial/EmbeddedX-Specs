@@ -9,7 +9,7 @@
 Proposed by: Richard Haberkern  
 Contact: rmhaberkern@gmail.com
 
-Free for evaluation. Commercial use requires permission. See `LICENSE.md` for more information.
+Free for evaluation. Commercial use requires permission. See [LICENSE.md](./LICENSE.md) for more information.
 
 * * *
 
@@ -157,4 +157,4 @@ Full project and library tree: [docs/full-file-tree.md](docs/full-file-tree.md)
 
 ## License
 
-See `LICENSE.md` for terms.
+See [LICENSE.md](./LICENSE.md) for terms.
